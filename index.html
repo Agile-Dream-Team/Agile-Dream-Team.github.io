@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Agile Software Development Team</title>
-  <meta name="description" content="We will rapidly assemble a dedicated software development team to help you achieve your goals in no time." data-rh="true">
+  <meta name="description"
+    content="We will rapidly assemble a dedicated software development team to help you achieve your goals in no time."
+    data-rh="true">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -12,8 +14,8 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -30,22 +32,47 @@
   <!-- Add your site or application content here -->
   <header class="header">
 
-   <img src="img/logo.jpg" alt="logo Agile Dream Team" class="logo"/>
-    <h1>Fully-managed Agile Software Development Teams</h1>
-    <p> <-- We will rapidly assemble a dedicated software development team to help you achieve your goals in no time.--> </p>
+    <img src="img/logo.jpg" alt="logo Agile Dream Team" class="logo" />
+    <h1>Fully-managed Agile Software Development Teams.</h1>
+    <p> <span class="example-selector"></span></p>
   </header>
 
   <main class="main">
 
-<h2>
-  We provide on-demand teams of developers to accelerate your digital transformation
-</h2>
-<p>We assemble and manage highly talented I.T. teams for custom mobile and web app developments. Our Teams-as-a-service approach to development makes our work flexible and adaptable</p>
+    <h2>
+      A typical agile dream team looks like this.
+    </h2>
+    <div class="thiscode">
+      <div>let agileDreamTeam = [</div> 
+      <div class="indt-1">'Delivery Manager',</div>
+      <div class="indt-1">'Scrum Master',</div>
+      <div class="indt-1">'Devops engineer',</div>
+      <div class="indt-1">'Lead Back-end',</div>
+      <div class="indt-1">'Lead Front-end',</div>
+      <div class="indt-1">...</div>
+      <div>]</div>
+    </div>
+
 
   </main>
   <footer class="footer">
     <p>hire@agiledreamteam.com</p>
   </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+<script src="js/autotyping.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const exampleText = ['We will rapidly assemble a dedicated software development team to help you achieve your goals in no time.'];
+        const exampleTyping = new AutoTyping('.example-selector', exampleText, {
+      typeSpeed: 40,
+      deleteSpeed: 30,
+      waitBeforeDelete: 2500,
+      waitBetweenWords: 500,
+    });
+    exampleTyping.start()
+  });
+</script>
+
 
 </html>
